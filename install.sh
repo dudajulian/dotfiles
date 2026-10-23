@@ -23,7 +23,7 @@ ln -sf "$(command -v fdfind)" ~/.local/bin/fd
 link zsh/.zshrc                       ~/.zshrc
 link tmux/.tmux.conf                  ~/.tmux.conf
 link ghostty/config.ghostty           ~/.config/ghostty/config.ghostty
-link nvim/.config/nvim                ~/.config/nvim
+link nvim               	      ~/.config/nvim
 
 # nvim as default editor: add the update-alternatives commands from setdefault.md here
 
