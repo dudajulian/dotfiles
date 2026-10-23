@@ -1,10 +1,13 @@
 neovim
+build-essential
 git
 zsh
 curl
-build-essential
+unzip
 ripgrep
 fd-find
 fzf
 tmux
+tree-sitter-cli
+xclip
 x11-xserver-utils   # provides xhost, used in .zshrc
