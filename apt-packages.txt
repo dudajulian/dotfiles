@@ -1,0 +1,10 @@
+neovim
+git
+zsh
+curl
+build-essential
+ripgrep
+fd-find
+fzf
+tmux
+x11-xserver-utils   # provides xhost, used in .zshrc
