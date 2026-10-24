@@ -20,9 +20,10 @@ ln -sf "$(command -v fdfind)" ~/.local/bin/fd
 [ -d ~/.tmux/plugins/tpm ] || git clone --depth=1 https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # dotfiles
-link zsh/.zshrc                 ~/.zshrc
+link .zshrc                     ~/.zshrc
 link tmux                       ~/.config/tmux
 link ghostty                    ~/.config/ghostty
-link nvim               	      ~/.config/nvim
+link nvim               	~/.config/nvim
+link .gitconfig			~/.gitconfig
 
 # nvim as default editor: add the update-alternatives commands from setdefault.md here
