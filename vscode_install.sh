@@ -2,4 +2,4 @@
 set -euo pipefail
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
-link tmux/.tmux.conf ~/.tmux.conf
+link tmux  ~/.config/tmux
