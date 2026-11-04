@@ -3,7 +3,7 @@ set -euo pipefail
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 # PPA
-# sudo add-apt-repository -y ppa:neovim-ppa/unstable
+sudo add-apt-repository -y ppa:neovim-ppa/unstable
 
 # packages (comments in the list are ignored)
 sudo apt-get update
@@ -17,9 +17,9 @@ ln -sf "$(command -v fdfind)" ~/.local/bin/fd
 # [ -d ~/.oh-my-zsh ] || git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
 # dotfiles
-link .zshrc                     ~/.zshrc
+# link .zshrc                     ~/.zshrc
 link .tmux.conf                 ~/.tmux.conf
 # link ghostty                    ~/.config/ghostty
-# link nvim               	~/.config/nvim
+link nvim               	~/.config/nvim
 # link .gitconfig			~/.gitconfig
 
