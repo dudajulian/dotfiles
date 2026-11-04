@@ -124,3 +124,5 @@ alias ta="task add"
 alias tl="task list"
 
 xhost +local:docker
+export BUILDX_BAKE_ENTITLEMENTS_FS=0
+
