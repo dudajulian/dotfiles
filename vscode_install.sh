@@ -3,7 +3,7 @@ set -euo pipefail
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 # PPA
-sudo add-apt-repository -y ppa:neovim-ppa/unstable
+# sudo add-apt-repository -y ppa:neovim-ppa/unstable
 
 # packages (comments in the list are ignored)
 sudo apt-get update
