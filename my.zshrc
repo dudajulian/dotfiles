@@ -76,6 +76,21 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+# Mark SSH Terminals
+ssh() {
+  if [[ -n "$TMUX" ]]; then
+    tmux select-pane -P 'bg=#331111'
+    command ssh "$@"
+    local ret=$?
+    tmux select-pane -P 'bg=default'
+    return $ret
+  fi
+  print -Pn "\e]0;[ssh] $*\a"
+  command ssh "$@"
+  local ret=$?
+  print -Pn "\e]0;%n@%m\a"
+  return $ret
+}
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
